@@ -26,6 +26,7 @@ body {
     width: 100%;
     max-width: 1200px;
     padding: 20px;
+    z-index: 2;
 }
 
 .content {
@@ -143,10 +144,25 @@ body {
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
+        padding: 20px; /* Add padding to the container */
     }
 
     .content {
         padding-left: 0; /* Remove left padding on mobile */
+    }
+
+    .header .logo {
+        width: 30px; /* Adjust logo size for mobile */
+        margin-bottom: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem; /* Adjust font size for mobile */
+    }
+
+    .header p {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+        margin-bottom: 20px;
     }
 
     .cards {
@@ -156,5 +172,6 @@ body {
 
     .card {
         width: 100%; /* Ensure cards take full width on mobile */
+        margin-right: 10px; /* Add margin to the right */
     }
 }
