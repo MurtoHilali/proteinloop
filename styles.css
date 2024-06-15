@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Syne', sans-serif;
 }
+html {
+    overflow: auto;
+}
 
 body {
     display: flex;
