@@ -20,7 +20,7 @@ body {
     background-blend-mode: overlay;
     color: white;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .container {
