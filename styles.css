@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #070D29 0%, #5b5d90 50%, #5a6ab0 100%),
+                linear-gradient(to right, #091236, #373967);
+    background-blend-mode: overlay;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Adjusted column widths */
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 40px; /* Increased left padding */
+}
+
+.header .logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 800; /* Bold for the title */
+    margin-bottom: 10px;
+    color: #F3F4F4;
+}
+
+.header p {
+    font-size: 1rem;
+    font-weight: 400; /* Normal weight for other text */
+    margin-bottom: 40px;
+    color: #F3F4F4;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px; /* Adjust gap between columns */
+}
+
+.card {
+    background: transparent;
+    border: 1px solid #12E1B9;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #12E1B9;
+}
+
+.card:hover .card-content p, .card:hover .arrow, .card:hover .status-button, .card:hover .card-icon {
+    color: #1E215D; /* Change text and arrow color on hover */
+}
+
+.card-content {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.card-content p {
+    font-size: 1rem;
+    font-weight: 500; /* Normal weight for other text */
+    margin: 0;
+    color: #12E1B9;
+}
+
+.card-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1rem;
+    color: #12E1B9;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    color: #12E1B9;
+}
+
+.status-button {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #12E1B9;
+    color: #12E1B9;
+    font-size: 0.8rem;
+    cursor: default;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.status-button:hover {
+    background-color: #12E1B9;
+    color: #1E215D;
+    border: 1px solid #1E215D;
+}
+
+.footer {
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #12E1B9;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        padding-left: 0; /* Remove left padding on mobile */
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%; /* Ensure cards take full width on mobile */
+    }
+}
