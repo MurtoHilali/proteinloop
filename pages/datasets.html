@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteinloop - PepPI Datasets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
+</head>
+<body>
+    <div>
+        <div class="page-content">
+            <div class="page-header">
+                <a href="index.html"><img src="proteinloop-logo.png" alt="Logo" class="logo"></a>
+            </div>
+            <div class="main-content">
+                <div class="text-section">
+                    <h2 class="page-title">PepBDB-ML</h2>
+                    <p class="page-subtitle">Peptide-protein datasets from PepBDB, designed to be ML & DL-friendly for compbio tasks. Read more on GitHub & Medium.</p>
+                    <div class="icons">
+                        <a href="https://github.com/MurtoHilali/PepBDB-ML" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://medium.com/your-medium-url" target="_blank"><i class="fab fa-medium"></i></a>
+                        <a href="https://drive.google.com/file/d/10pcHQH5zMcB5rlAxpL6ZEQ8HWNcCePBU/view?usp=sharing" target="_blank"><i class="fa-brands fa-google-drive"></i></a>
+                    </div>
+                    <div class="page-description-container">
+                        <p>
+                            This project aims to generate and provide an enriched dataset from the PepBDB database for machine learning and computational biology research.
+                            PepBDB-ML is a tabular dataset suitable for analysis with random forests, XGBoost, etc. 
+                            Each row is labeled as either a binding residue (1) or non-binding residue (0).
+                            <br>
+                            <br>
+                            <ul>
+                                <li>The data is based on the PepBDB dataset, which contains 3D structures of peptide-protein complexes.</li>
+                                <li>GitHub repo allows you to regenerate this dataset on your own machine.</li>
+                                <li>Generation requires PSI-BLAST, Prodigy, AAindex, BioPython, and more.</li>
+                            </ul>
+                            <br>
+                            Each column is as follows:
+                            <br>
+                            <ul>
+                                <br>
+                                <li>AA: Amino acid, single letter code.</li>
+                                <li>Protein Hydrophobicity: Hydrophobicity index of the resiude from AAindex1. (units).</li>
+                                <li>Protein Steric Parameter: Steric parameter of residue from AAindex. (units).</li>
+                                <li>Protein Volume: Spatial volume of residue. (units).</li>
+                                <li>Protein Polarizability:</li>
+                                <li>Protein Helix Probability:</li>
+                                <li>Protein Beta Probability:</li>
+                                <li>Protein Isoelectric Point: Isoelectric point of residue from AAindex. (units).</li>
+                                <li>Protein HSE Up:</li>
+                                <li>Protein HSE Down:</li>
+                                <li>Protein Pseudo Angles:</li>
+                                <li>Protein ASA:</li>
+                                <li>Protein Phi:</li>
+                                <li>Protein Psi:</li>
+                                <li>Protein SS {H...-}:</li>
+                                <li>A...V:</li>
+                                <li>Binding Indices: Label for the residue, 1 for binding and 0 for non-binding.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="iframe-container">
+                    <div class="iframe-wrapper">
+                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIWQGPPgrFvTi9mCuLiEdDYcSHHr8lIvk-lVOBMDvUTInc7Hi6tv2VJWHDyq1lAbyRdEUzt8uWHgCr/pubhtml?widget=true&amp;headers=false" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>@MurtoHilali // <a href="https://murto.co" target="_blank">murto.co</a></p>
+            </div>
+        </div>
+        <div class="empty-column"></div>
+    </div>
+</body>
+</html>
