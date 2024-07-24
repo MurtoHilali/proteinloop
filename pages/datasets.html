@@ -43,23 +43,65 @@
                             <br>
                             <ul>
                                 <br>
-                                <li>AA: Amino acid, single letter code.</li>
-                                <li>Protein Hydrophobicity: Hydrophobicity index of the resiude from AAindex1. (units).</li>
-                                <li>Protein Steric Parameter: Steric parameter of residue from AAindex. (units).</li>
-                                <li>Protein Volume: Spatial volume of residue. (units).</li>
-                                <li>Protein Polarizability:</li>
-                                <li>Protein Helix Probability:</li>
-                                <li>Protein Beta Probability:</li>
-                                <li>Protein Isoelectric Point: Isoelectric point of residue from AAindex. (units).</li>
-                                <li>Protein HSE Up:</li>
-                                <li>Protein HSE Down:</li>
-                                <li>Protein Pseudo Angles:</li>
-                                <li>Protein ASA:</li>
-                                <li>Protein Phi:</li>
-                                <li>Protein Psi:</li>
-                                <li>Protein SS {H...-}:</li>
-                                <li>A...V:</li>
-                                <li>Binding Indices: Label for the residue, 1 for binding and 0 for non-binding.</li>
+                                <li><b>AA:</b>  Amino acid, single letter code.</li>
+                                <li><b>Hydrophobicity:</b>  Hydrophobicity index of the resiude from AAindex1. (Unitless).</li>
+                                <li><b>Steric Parameter:</b>  Steric parameter of residue from AAindex1. (Unitless).</li>
+                                <li><b>Volume:</b>  Spatial volume of residue, from AAindex1. (Å²).</li>
+                                <li><b>Polarizability:</b>  How easily an amino acid's electron cloud will form dipoles in response to external forces from AAindex1. (Unitless).</li>
+                                <li><b>Helix Probability:</b>  Relative helix residue probability in 47 proteins, from AAindex1. (Unitless).</li>
+                                <li><b>Beta Probability:</b>  Relative beta sheet residue probability in 47 proteins, from AAindex1. (Unitless).</li>
+                                <li><b>Isoelectric Point:</b>  Isoelectric point of residue, from AAindex1. (pH).</li>
+                                <li><b>HSE Up:</b>  The number of Cɑs in the up-facing hemisphere. (Unitless, normalized integer counts).</li>
+                                <li><b>HSE Down:</b>  The number of Cɑs in the down-facing hemisphere. (Unitless, normalized integer counts).</li>
+                                <li><b>Pseudo Angles:</b>  The angle between three adjacent Cɑs. (Degrees).</li>
+                                <li><b>ASA:</b>  How accessible a residue in the sequence is by its surrounding solvent, normalized by the maximum possible ASA. (Unitless since normalized, but otherwise in Å²).</li>
+                                <li><b>Phi:</b>  Angle of rotation about the (N)-(Cɑ) bond. (In degrees)</li>
+                                <li><b>Psi:</b> Angle of rotation about the (Cɑ)-(carbonyl carbon) atom. (In degrees).</li>
+                                <li><b>SS {H...-}:</b> Secondary structure assignments from DSSP.</li>
+<ul>
+    <li>
+        <table>
+            <tr>
+                <th>Code</th>
+                <th>Structure</th>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>Alpha helix (4-12)</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Isolated beta-bridge residue</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>Strand</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>3-10 helix</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>Pi helix</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>Turn</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>Bend</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>None</td>
+            </tr>
+        </table>
+    </li>
+</ul>
+                                <li><b>A...V:</b> Normalized substitution matrix score for the residue in the sequence. (Unitless). </li>
+                                <li><b>Binding Indices:</b> Label for the residue, 1 for binding and 0 for non-binding.</li>
                             </ul>
                         </p>
                     </div>
